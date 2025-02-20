@@ -1,0 +1,21 @@
+# config/settings.yaml
+# 音频处理参数
+audio_params:
+  sample_rate: 16000
+  frame_length: 1024
+  vad_threshold: 0.75
+  silence_duration: 2.0
+
+# 模型路径配置
+model_paths:
+  vad_model: models/vad/v1.2.pt
+
+# 录音设备设置
+recording:
+  input_device_id: 0
+  output_device_id: 1
+
+# 测试默认参数（用于参数化测试）
+test_defaults:
+  test_samples: 5
+  noise_levels: [0.1, 0.3, 0.5]
